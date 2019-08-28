@@ -10,7 +10,7 @@ implement the button/emblem/symbol thingie for SCBWI, Society of Children’s Bo
 
 
 made a buncha changes
-
+makin more changes
 
 
 3. Implement any Edith changes 
