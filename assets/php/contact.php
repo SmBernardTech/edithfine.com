@@ -2,7 +2,7 @@
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ENTER RECPATCHA FOLDER INFO  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /*                                                            also change line 15 in contact.php                                                        */
 /* Require ReCaptcha class    => FILL IN WITH CORRECT INFO                                                                                              */           
-require('###########/assets/recaptcha/recaptcha-master/src/autoload.php');
+require('/home/ehf/edithfine.com/assets/recaptcha/recaptcha-master/src/autoload.php');
 /*     Example =>   require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');                                  */
 /*                                                                                                                                                      */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  ENTER RECPATCHA FOLDER INFO  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -20,7 +20,7 @@ $subject = "New message from edithfine.com";
 $fields = array('name' => 'Name', 'email' => 'Email', 'phone' => 'Phone', 'message' => 'Message');
 
 // Message to display when all OK
-$okMessage = 'Message sent!; <br> Thanks! I will contact you soon.';
+$okMessage = 'Message sent! <br> Thanks! I will contact you soon.';
 
 // Message to display if not OK
 $errorMessage = 'There was an error while submitting the form. <br> Please try again later';
