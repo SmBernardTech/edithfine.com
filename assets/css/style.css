@@ -18,6 +18,10 @@
     13. Responsive
 ============================================ */
 
+.alert.alert-success {
+    background-color: #9BC04D;
+}
+
 
 /* @@@@@@@@@@ CAROUSEL @@@@@@@@@@ */
 
