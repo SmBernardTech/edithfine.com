@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scratch Doc</title>
+</head>
+
+<body>
+
+
+    <!-- ORIGINAL CONTACT FORM -->
+
+    <!-- ================================== Contact Section =================================== -->
+    <section id="contact">
+
+        <!-- Contact Form Header -->
+        <div class="container text-center">
+            <h2 class="title"><i class="fa fa-envelope"></i> Get in Touch</h2>
+            <p class="description"><span>All fields required.</span></p>
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+            <div class="messages"></div>
+
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+
+
+
+
+
+
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name...">
+                        </div>
+
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <i class="now-ui-icons ui-1_email-85"></i>
+                            </span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email...">
+                        </div>
+
+
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="Phone...">
+                        </div>
+
+
+                        <div class="textarea-container">
+                            <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+                        </div>
+
+                        <br>
+
+                        <!-- Recaptcha ---Will need to replace testing key with personal sitekey---ENTER_GOOGLE_RECPATCHA_SITEKEY-->
+                        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                        <input class="form-control d-none" data-recaptcha="true" type="hidden" required data-error="Captcha required">
+                        <div class="help-block with-errors"></div>
+
+                        <br>
+
+                        <!-- Contact Form Send Button -->
+                        <div class="send-button">
+                            <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+    </section>
+
+
+    <!-- END OF ORIGINAL CONTACT FORM -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================================ #contact-form ==================================== -->
+    <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+
+        <div class="messages"></div>
+
+        <div class="controls">
+
+            <div class="form-group">
+                <label for="form_name" class="sr-only">Name</label>
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="Please enter at least 2 characters">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="form_email" class="sr-only">Email</label>
+            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter Email" required="required" data-error="Please enter a valid email">
+            <div class="help-block with-errors "></div>
+        </div>
+
+        <div class="form-group">
+            <label for="form_phone" class="sr-only">Phone</label>
+            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter Phone" required="required" data-error="Please enter a valid phone number">
+            <div class="help-block with-errors "></div>
+        </div>
+
+        <div class="form-group">
+            <label for="form_message" class="sr-only">Message</label>
+            <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please include a message" placeholder="Message"></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <!-- Recaptcha ---Will need to replace testing key with personal sitekey---ENTER_GOOGLE_RECPATCHA_SITEKEY-->
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="verifyRecaptchaCallback" data-theme="light" data-expired-callback="expiredRecaptchaCallback"></div>
+            <input class="form-control d-none" data-recaptcha="true" required data-error="Captcha required">
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <br>
+
+        <!-- Contact Form Send Button -->
+        <div class="send-button">
+            <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
+        </div>
+
+
+
+
+
+
+    </form>
+    <!-- ================================ end of contact-form ==================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,813 @@
+/*=========== TABLE OF CONTENTS ===========
+    1.  Error Page (404)
+    2.  Loader   
+    3.  General/Misc
+    4.  NavBar 
+    5.  Title & Tagline
+    6.  About
+    7.  Books
+            ##Book Img Pointer
+            ##Books Buttons
+            ##Books Popovers
+    8.  Cryptofun
+    9.  Blog
+    10. Map
+    11. Contact
+    12. Footer
+            ##smb
+    13. Responsive
+============================================ */
+
+
+/* @@@@@@@@@@ CAROUSEL @@@@@@@@@@ */
+
+div#header-logo {
+    padding-top: 250px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: #439DD9;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+    color: #112B63;
+}
+
+.carousel-indicators li {
+    background-color: #439DD9;
+    opacity: .3;
+}
+
+.carousel-indicators li:hover,
+.carousel-indicators li:focus {
+    background-color: #112B63;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 1. Error Page (404) @@@@@@@@@@@@@@@@@@@@ */
+
+.error {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    display: table;
+    position: center;
+    background-image: url('../imgs/bgs/404.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.error .title404 {
+    /* text-align: center; */
+    margin-top: 320px;
+    color: #112B63;
+    font-size: 42px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 2. Loader @@@@@@@@@@@@@@@@@@@@ */
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../imgs/alphy/loader-1.gif') 50% 50% no-repeat rgb(249, 249, 249);
+    background-color: #9BC04D;
+}
+
+
+/* .loader {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #fafafa;
+    background: center center;
+    text-align: center;
+    color: #112B63;
+} */
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 3. General/Misc @@@@@@@@@@@@@@@@@@@@ */
+
+body {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    color: #112B63;
+}
+
+.btn {
+    font-size: 16px;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+}
+
+.form-control::placeholder {
+    font-family: 'Halant', serif;
+    font-size: 18px;
+    color: #112B63;
+}
+
+p {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    color: #112B63;
+}
+
+span {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    color: #112B63;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 4. NavBar @@@@@@@@@@@@@@@@@@@@ */
+
+div#navigation .fa,
+.fas {
+    font-size: 18px;
+}
+
+
+/* 4678 */
+
+.navbar.navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: transparent !important; */
+    box-shadow: none;
+    /* color: #FFFFFF; */
+    color: #112B63;
+    padding-top: 20px !important;
+}
+
+.navbar .navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar .navbar-brand img:hover,
+.navbar .navbar-brand img:focus {
+    opacity: .6;
+}
+
+.navbar .navbar-nav .nav-link:not(.btn) {
+    font-size: 0.9em;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 5. Title & Tagline @@@@@@@@@@@@@@@@@@@@ */
+
+.profile-page .title {
+    color: #112B63;
+    font-size: 48px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 100px;
+}
+
+.profile-page .title span {
+    color: #112B63;
+    font-size: 24px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ 6. About @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+section#about {
+    background-color: #ecf5fb;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-page h5.description {
+    max-width: 700px;
+    margin: 40px 85px;
+}
+
+section#about .card {
+    position: relative;
+    margin: 40px;
+    border-radius: 0.3rem;
+    background-color: #c6e1f3;
+    background-position: center center;
+    z-index: 0;
+}
+
+section#about h5 {
+    color: #112B63;
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+section#about h6 {
+    color: #7c993d;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 22px;
+}
+
+.blockquote.blockquote-primary {
+    border-color: #112B63;
+    color: #112B63;
+    font-size: 20px;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.blockquote.blockquote-primary small {
+    color: #112B63;
+    font-size: 16px;
+    float: right;
+}
+
+p.credit {
+    font-family: 'Halant', serif;
+    font-size: 16px;
+    color: #d9ebf7;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.section-story-overview .image-container.img2 {
+    max-height: 260px;
+    max-width: 300px;
+    margin-left: 40px;
+    top: -140px;
+    z-index: 2;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 7. Books @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+section#books {
+    background-color: #ebf2db;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 50px 0;
+}
+
+h5.sub {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-size: 28px;
+}
+
+
+/* @@@@@@@@@@ ##Book Img Pointer @@@@@@@@@@ */
+
+.profile-page .gallery img {
+    cursor: pointer;
+}
+
+
+/* @@@@@@@@@@ ##Books Buttons @@@@@@@@@@ */
+
+.modal {
+    text-align: left
+}
+
+.modal .modal-header .close {
+    color: #da1504;
+    text-shadow: none;
+    padding: 0 0;
+}
+
+#books .btnBuy1 {
+    background-color: #439DD9;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+a.btn.btnBuy2 img {
+    max-height: 50px;
+    width: auto;
+}
+
+#books .btnBuy2 {
+    background-color: transparent;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    color: #112B63;
+}
+
+#books .btnBuy2:hover,
+#books .btnBuy2:focus {
+    transition: box-shadow .3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#books .btnClose {
+    font-family: 'Halant', serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #9BC04D;
+    color: #fff;
+    opacity: 100;
+}
+
+#books .btnClose:hover,
+#books .btnClose:focus {
+    color: #112B63;
+}
+
+#books .btnInfo {
+    background-color: #F3CE4C;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#books .btnInfo:hover,
+#books .btnInfo:focus {
+    background-color: #f5d76f;
+}
+
+
+/* @@@@@@@@@@ ##Books Popovers @@@@@@@@@@ */
+
+.popover {
+    background-color: #fdfaed;
+    font-family: 'Halant', serif;
+}
+
+.popover .popover-header {
+    font-family: 'Halant', serif;
+    color: #9BC04D;
+    font-size: 16px;
+}
+
+.popover-body h6 {
+    font-family: 'Halant', serif;
+    color: #9BC04D;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.popover-body p.ill {
+    font-family: 'Halant', serif;
+    font-size: 16px;
+}
+
+.popover-body a {
+    color: #112B63;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.popover-body a:hover,
+.popover-body a:focus {
+    background-color: #9BC04D;
+    color: #fff;
+}
+
+
+/* @@@@@@@@@@ end of BOOKS BUTTONS @@@@@@@@@@ */
+
+
+/* @@@@@@@@@@ 8. CRYPTOFUN @@@@@@@@@@ */
+
+a.btn.btn-crypt img {
+    height: 100%;
+    width: auto;
+}
+
+#cryptofun .btn-crypt {
+    background-color: transparent;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    color: #112B63;
+}
+
+#cryptofun .btn-crypt:hover,
+#cryptofun .btn-crypt:focus {
+    opacity: .3s;
+}
+
+section#cryptofun {
+    background-color: #ecf5fb;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+[data-background-color="orange"] {
+    background-color: #dd5b2b;
+}
+
+[data-background-color="green"] {
+    background-color: #9BC04D;
+}
+
+section#cryptofun p {
+    text-align: left;
+}
+
+section#cryptofun p.category {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    color: #112B63;
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    margin-bottom: 0;
+    border-radius: 30px;
+}
+
+pre {
+    font-family: 'Halant', serif;
+    color: #112B63;
+    font-size: 1rem;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 9. Blog @@@@@@@@@@@@@@@@@@@@ */
+
+section#blog h2.title {
+    padding-bottom: 50px;
+}
+
+section#blog {
+    background-color: #fdfaed;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+.input-group {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+    color: #555555;
+}
+
+.profile-page .collections img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+[class*="blogs-"] {
+    padding: 50px 0;
+    background-color: #fdfaed;
+}
+
+.card .author .avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .card-footer div {
+    display: inline-block;
+}
+
+.card .author span {
+    color: #2e6d97;
+    font-family: 'Sedgwick Ave', cursive;
+    font-weight: 600;
+}
+
+.card .card-footer .stats.stats-right {
+    float: right;
+    line-height: 30px;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.card-title {
+    color: #060f15;
+    font-weight: 600;
+}
+
+.card-description {
+    color: #112B63;
+}
+
+.card .text-info {
+    color: #439DD9 !important;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 10. Map @@@@@@@@@@@@@@@@@@@@ */
+
+section#map {
+    background-color: #9BC04D;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 10px 0 40px 0;
+}
+
+section#map h4 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #112B63;
+    padding-top: 30px;
+    text-align: center;
+}
+
+section#map p {
+    font-size: 1.5em;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 11. Contact @@@@@@@@@@@@@@@@@@@@ */
+
+section#contact {
+    background-color: #ecf5fb;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ 12. Footer @@@@@@@@@@@@@@@@@@@@ */
+
+.footer.footer-default {
+    background: #F3CE4C;
+    background-image: linear-gradient(to left, #F3CE4C, #dd5b2b);
+    border-bottom: 1px solid #F3CE4C;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    opacity: .95;
+}
+
+li.footer-nav {
+    color: #112B63;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.footer .now-ui-icons {
+    font-size: 16px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    opacity: .75;
+}
+
+
+/* @@@@@@@@@@ ##smb @@@@@@@@@@ */
+
+.smb img {
+    max-height: 50px;
+}
+
+.smb img:hover {
+    opacity: .75;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 13. Responsive @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 991px) {
+    .profile-page h5.description {
+        margin: 20px 40px;
+    }
+    section#about h5 {
+        font-size: 16px;
+    }
+    section#cryptofun a.nav-link {
+        font-size: 12px;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    section#cryptofun .nav-tabs {
+        padding-left: 5px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #books .btnBuy1 {
+        margin: 5px;
+        text-align: center;
+    }
+    h5 {
+        font-size: .85rem;
+    }
+    h5.sub {
+        font-size: 22px;
+    }
+    .image-container.image-right {
+        margin-bottom: 120px;
+    }
+    .nav-pills {
+        margin-left: 50px;
+    }
+    .profile-page .title {
+        font-size: 24px !important;
+    }
+    .profile-page h5.description {
+        margin: 10px;
+    }
+    section#about .card {
+        margin: 10px;
+    }
+    section#blog h2.title {
+        padding: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    section#cryptofun a.nav-link {
+        font-size: 12px;
+        padding: 1px;
+    }
+    .section-story-overview .image-container.img2 {
+        max-height: 130px !important;
+        max-width: 150px !important;
+        top: -60px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    pre {
+        font-size: .6rem;
+    }
+    section#cryptofun p {
+        font-size: .6rem;
+    }
+    section#cryptofun p.category {
+        font-size: 10px;
+    }
+    section#cryptofun a.btn.btn-primary.btn-round {
+        font-size: .6rem;
+    }
+    section#cryptofun .card .card-header {
+        padding: 1px;
+        margin: 1px;
+    }
+    section#cryptofun .nav-tabs {
+        padding-left: 5px;
+        text-align: left;
+    }
+    section#map h4 {
+        font-size: 22px;
+    }
+    section#map .text-center {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 259px) {
+    #books .btnBuy1 {
+        font-size: 8px;
+        margin: 1px;
+        text-align: center;
+    }
+    #books .btnInfo {
+        font-size: 8px;
+        margin: 1px;
+        text-align: center;
+    }
+    div.smb {
+        margin: 10px;
+        padding: 3px;
+    }
+    .form-control::placeholder {
+        font-size: 14px;
+    }
+    h5.sub {
+        font-size: 16px;
+        margin: 2px;
+    }
+    .image-container.image-left {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        max-height: 75px;
+        max-width: auto;
+    }
+    .image-container.image-left p.blockquote {
+        display: none;
+    }
+    .image-container.image-right {
+        display: none;
+    }
+    .modal {
+        max-width: 180px;
+    }
+    .navbar-nav {
+        padding-left: 150px;
+    }
+    p {
+        font-size: .6em;
+    }
+    p.credit {
+        font-size: 6px;
+    }
+    .popover {
+        font-size: 10px;
+        max-width: 150px;
+    }
+    .profile-page .collections img {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .profile-page h5.description {
+        margin: 5px;
+    }
+    .profile-page .title {
+        font-size: 18px !important;
+    }
+    section#about h5 {
+        font-size: 12px;
+    }
+    section#blog h2.title {
+        padding-bottom: 5px;
+    }
+    section#cryptofun h4 {
+        font-size: 1rem;
+    }
+    section#cryptofun .nav-tabs {
+        padding-left: 5px;
+        text-align: left;
+    }
+    .section-story-overview {
+        padding: 10px;
+    }
+    .section-story-overview .image-container.img2 {
+        max-height: 65px !important;
+        max-width: 75px !important;
+        top: -30px !important;
+        z-index: 0;
+    }
+    .section-story-overview .image-container:nth-child(2) {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 170px) {
+    #books .btnBuy1 {
+        font-size: 4px;
+        padding: 2px;
+    }
+    #books .btnInfo {
+        font-size: 4px;
+        padding: 2px;
+    }
+    .btn-lg {
+        padding: 15px;
+    }
+    .footer .copyright {
+        font-size: .6rem;
+    }
+    .form-control::placeholder {
+        font-size: .6rem;
+    }
+    h5 {
+        font-size: .6rem;
+    }
+    h5.sub {
+        font-size: 16px !important;
+    }
+    .nav-pills {
+        margin-left: 30px;
+    }
+    .profile-page h5.description {
+        margin: 3px;
+    }
+    .profile-page .title {
+        font-size: 18px !important;
+    }
+    section#about h5 {
+        font-size: 8px;
+    }
+    section#about h6 {
+        font-size: 8px;
+    }
+    section#cryptofun .nav-tabs {
+        padding-left: 5px;
+        text-align: left;
+    }
+}
