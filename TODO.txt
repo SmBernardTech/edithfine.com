@@ -9,7 +9,7 @@ Change Buy btn modal bg colour from bright orange (yellow?)
 implement the button/emblem/symbol thingie for SCBWI, Society of Children’s Book Writers and Illustrators 
 
 
-
+made a buncha changes
 
 
 
